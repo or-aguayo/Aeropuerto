@@ -67,7 +67,7 @@ public class Aeropuerto {
                 while(condicion){
                 for (Pasajero pasajero : vuelo.getPasajeros()) {
                         {
-                            if (pasajero.getPasaporteSanitario().equals(null) || pasajero.getPasaporteSanitario().getResultadoPCR() == true) {
+                            if (pasajero.getPasaporteSanitario()==null || pasajero.getPasaporteSanitario().getResultadoPCR() == true) {
                                 condicion = false;
                                 pasajeros.addAll(vuelo.getPasajeros());
                                 vuelos.add(vuelo);
