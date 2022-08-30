@@ -7,8 +7,12 @@ import java.util.List;
 import Aeropuerto.Avion;
 
 public class Aeropuerto {
-    private ArrayList<Avion> aviones = new ArrayList<Avion>();
-
+    private ArrayList<Avion> aviones; 
+    
+    public Aeropuerto(){
+        this.aviones = new ArrayList<Avion>();
+    }
+    
     public Avion agregarAvion(String nombre, int año) {
         Avion avion = new Avion(nombre, año, this);
         this.aviones.add(avion);
